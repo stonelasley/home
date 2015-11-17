@@ -1,0 +1,90 @@
+nav ul a,
+nav .brand-logo {
+  color: #ffffff;
+}
+
+p {
+  line-height: 3rem;
+}
+
+.panel {
+  border: solid 1px #e8ca79;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.tint {
+  background: black;
+  opacity: .5;
+}
+
+.social {
+  margin-left: 25px;
+  padding: 0;
+}
+
+.social img {
+  width: 30px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+html {
+  background: url(../img/winter-background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.material-icons.gold {
+  color: #e8ca79;
+}
+
+/*Form Colors*/
+
+/* label color */
+.input-field label {
+  color: #ffffff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #ffffff;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #e8ca79;
+  box-shadow: 0 1px 0 0 #e8ca79;
+}
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #e8ca79;
+  box-shadow: 0 1px 0 0 #e8ca79;
+}
+.input-field textarea:focus {
+  border-bottom: 1px solid #e8ca79;
+  box-shadow: 0 1px 0 0 #e8ca79;
+}
+/* valid color */
+
+/* invalid color */
+.input-field input[type=text].ng-invalid {
+  border-bottom: 1px solid #ff0000;
+  box-shadow: 0 1px 0 0 #ff0000;
+}
+.input-field input[type=email].ng-invalid {
+  border-bottom: 1px solid #ff0000;
+  box-shadow: 0 1px 0 0 #ff0000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #ff0000;
+}

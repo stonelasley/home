@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="stone" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="stone" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="stone" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="stone" class="no-js"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Stone Lasley Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS START -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
+    <link rel="stylesheet" href="components/common/css/app.css">
+    <!-- CSS END -->
+
+    <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#view1">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav collection">
+            <li class="collection-item avatar">
+                <i class="material-icons circle">folder</i>
+                <span class="title">Title</span>
+                <p>First Line</p>
+                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle">folder</i>
+                <span class="title">Title</span>
+                <p>First Line</p>
+                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle green">insert_chart</i>
+                <span class="title">Title</span>
+                <p>First Line</p>
+                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">play_arrow</i>
+                <span class="title">Title</span>
+                <p>First Line</p>
+                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+
+<main>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+</main>
+
+<footer class="page-footer transparent">
+    <div class="footer-copyright">
+        <div class="container">
+            Made by <a class="black-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            <a id="github" class="social white-text right" href="https://github.com/stonelasley">
+                <img src="components/common/img/icons/github-512px.svg" alt="Stone Lasley Github profile">
+            </a>
+            <a id="google+" class="social white-text right" href="https://plus.google.com/+stonelasley">
+                <img src="components/common/img/icons/googleplus-rect-512px.svg" alt="Stone Lasley plus.google.com">
+            </a>
+            <a id="facebook" class="social white-text right" href="http://www.facebook.com/stonelasley">
+                <img src="components/common/img/icons/facebook-rect-512px.svg" alt="Stone Lasley Facebook">
+            </a>
+            <a id="linkedin" class="social white-text right" href="https://www.linkedin.com/profile/view?id=AAMAAAbJNfMBw6U5T-12yJVTV7S8-mJ5TzEt0fk">
+                <img src="components/common/img/icons/linkedin-rect-512px.svg" alt="Stone Lasley Linkedin profile">
+            </a>
+            <a id="twitter" class="social white-text right" href="http://www.twitter.com/stonelasley">
+                <img src="components/common/img/icons/twitter-bird-512px.svg" alt="Stone Lasley Twitter">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+<script src="init.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="contact/contact.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+
+</body>
+</html>

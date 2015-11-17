@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col offset-s2 s8">
+        <div class="panel">
+            <span class="center-align white-text"><h1>contact me</h1></span>
+
+            <div ng-controller="ContactCtrl">
+                <form novalidate class="simple-form">
+                    <div class="input-field">
+                        <input placeholder="name" type="text" ng-model="user.name"/>
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="email" type="email" ng-model="user.email"/>
+                    </div>
+                    <div class="input-field">
+                        Gender: <input type="radio" ng-model="user.gender" value="male"/>male
+                    </div>
+                    <div class="input-field">
+                        <input type="radio" ng-model="user.gender" value="female"/>female<br/>
+                    </div>
+                    <div class="input-field">
+                        <textarea class="materialize-textarea" placeholder="message" ng-model="user.message"/>
+                    </div>
+                    <input type="submit" ng-click="update(user)" value="Save"/>
+                </form>
+                <p>{{confirmMessage}}</p>
+                <pre>user = {{user | json}}</pre>
+                <pre>master = {{master | json}}</pre>
+            </div>
+        </div>
+    </div>
+</div>
