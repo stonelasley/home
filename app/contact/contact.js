@@ -13,14 +13,14 @@ angular.module('stone.contact', ['ngRoute'])
   $scope.master = {};
   $scope.confirmMessage;
 
-  $scope.update = function(user) {
-    $scope.master = angular.copy(user);
+  $scope.update = function(contact) {
+    $scope.master = angular.copy(contact);
     $scope.reset();
   }
 
 
   $scope.reset = function () {
-    $scope.user = angular.copy($scope.master);
+    $scope.contact = angular.copy($scope.master);
     $scope.confirmMessage = "Thank you";
   }
 

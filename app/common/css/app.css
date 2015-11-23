@@ -3,21 +3,24 @@ nav .brand-logo {
   color: #ffffff;
 }
 
-p {
-  line-height: 3rem;
+body {
+    color: #ffffff;
+    display: flex;
+    font-weight: 200;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 200;
 }
 
 .panel {
+    font-size: 1.4rem;
   border: solid 1px #e8ca79;
   margin-top: 4rem;
   padding: 3rem;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .tint {
@@ -51,15 +54,30 @@ html {
 }
 
 /*Form Colors*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px whitesmoke inset;
+}
+
 
 /* label color */
 .input-field label {
   color: #ffffff;
+    font-size: 1.2rem;
 }
 /* label focus color */
 .input-field input[type=text]:focus + label {
   color: #ffffff;
 }
+.input-field input[type=email]:focus + label {
+    color: #ffffff;
+}
+.input-field input[type=tel]:focus + label {
+    color: #ffffff;
+}
+textarea.materialize-textarea:focus:not([readonly]) + label{
+    color: #ffffff;
+}
+/*
 /* label underline focus color */
 .input-field input[type=text]:focus {
   border-bottom: 1px solid #e8ca79;
@@ -69,7 +87,11 @@ html {
   border-bottom: 1px solid #e8ca79;
   box-shadow: 0 1px 0 0 #e8ca79;
 }
-.input-field textarea:focus {
+.input-field input[type=tel]:focus {
+    border-bottom: 1px solid #e8ca79;
+    box-shadow: 0 1px 0 0 #e8ca79;
+}
+textarea.materialize-textarea:focus:not([readonly]){
   border-bottom: 1px solid #e8ca79;
   box-shadow: 0 1px 0 0 #e8ca79;
 }
@@ -83,8 +105,4 @@ html {
 .input-field input[type=email].ng-invalid {
   border-bottom: 1px solid #ff0000;
   box-shadow: 0 1px 0 0 #ff0000;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
-  color: #ff0000;
 }

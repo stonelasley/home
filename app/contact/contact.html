@@ -1,30 +1,33 @@
 <div class="row">
-    <div class="col offset-s2 s8">
+    <div class="col s12 m6">
         <div class="panel">
-            <span class="center-align white-text"><h1>contact me</h1></span>
+            <span class="center-align white-text"><h1>Contact Me</h1></span>
 
             <div ng-controller="ContactCtrl">
                 <form novalidate class="simple-form">
                     <div class="input-field">
-                        <input placeholder="name" type="text" ng-model="user.name"/>
+                        <input id="contact-name" type="text" ng-model="contact.name"/>
+                        <label for="contact-name">Name</label>
                     </div>
                     <div class="input-field">
-                        <input placeholder="email" type="email" ng-model="user.email"/>
+                        <input id="icon_telephone" type="tel" ng-model="contact.phone">
+                        <label for="icon_telephone">Telephone</label>
                     </div>
+
                     <div class="input-field">
-                        Gender: <input type="radio" ng-model="user.gender" value="male"/>male
+                        <input id="contact-email" type="email" ng-model="contact.email"/>
+                        <label for="contact-email">Email</label>
                     </div>
+
                     <div class="input-field">
-                        <input type="radio" ng-model="user.gender" value="female"/>female<br/>
+                        <textarea id="contact-message" class="materialize-textarea"  ng-model="contact.message"></textarea>
+                        <label for="contact-message">Message</label>
                     </div>
-                    <div class="input-field">
-                        <textarea class="materialize-textarea" placeholder="message" ng-model="user.message"/>
+                    <div class="right-align">
+                        <input class="btn btn-large black" type="submit" ng-click="update(contact)" value="Submit"/>
                     </div>
-                    <input type="submit" ng-click="update(user)" value="Save"/>
                 </form>
                 <p>{{confirmMessage}}</p>
-                <pre>user = {{user | json}}</pre>
-                <pre>master = {{master | json}}</pre>
             </div>
         </div>
     </div>
