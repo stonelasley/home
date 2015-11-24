@@ -1,6 +1,6 @@
 nav ul a,
 nav .brand-logo {
-  color: #ffffff;
+  color: #000000;
 }
 
 body {
@@ -20,12 +20,20 @@ h1, h2, h3, h4, h5 {
   border: solid 1px #e8ca79;
   margin-top: 4rem;
   padding: 3rem;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.tint {
-  background: black;
-  opacity: .5;
+nav ul a {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #e8ca79;
+}
+
+.btn {
+    color: #000000;
+    font-size: 1.5rem;
 }
 
 .social {
@@ -62,7 +70,11 @@ input:-webkit-autofill {
 /* label color */
 .input-field label {
   color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.input-field label.active {
+    font-size: 1rem;
 }
 /* label focus color */
 .input-field input[type=text]:focus + label {
