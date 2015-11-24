@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
-    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <!-- CSS END -->
 
     <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -31,7 +31,7 @@
         <a id="logo-container" href="#" class="brand-logo">Stone Lasley</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#view1">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav collection">
@@ -67,7 +67,7 @@
 
 <main>
     <div class="container">
-        <div ng-view></div>
+        <div ui-view></div>
     </div>
 </main>
 
@@ -76,46 +76,35 @@
         <div class="container">
             Made by <a class="black-text text-lighten-3" href="http://materializecss.com">Materialize</a>
             <a id="github" class="social white-text right" href="https://github.com/stonelasley">
-                <img src="../assets/img/icons/github-512px.svg" alt="Stone Lasley Github profile">
+                <img src="assets/img/icons/github-512px.svg" alt="Stone Lasley Github profile">
             </a>
             <a id="google+" class="social white-text right" href="https://plus.google.com/+stonelasley">
-                <img src="../assets/img/icons/googleplus-rect-512px.svg" alt="Stone Lasley plus.google.com">
+                <img src="assets/img/icons/googleplus-rect-512px.svg" alt="Stone Lasley plus.google.com">
             </a>
             <a id="facebook" class="social white-text right" href="http://www.facebook.com/stonelasley">
-                <img src="../assets/img/icons/facebook-rect-512px.svg" alt="Stone Lasley Facebook">
+                <img src="assets/img/icons/facebook-rect-512px.svg" alt="Stone Lasley Facebook">
             </a>
             <a id="linkedin" class="social white-text right" href="https://www.linkedin.com/profile/view?id=AAMAAAbJNfMBw6U5T-12yJVTV7S8-mJ5TzEt0fk">
-                <img src="../assets/img/icons/linkedin-rect-512px.svg" alt="Stone Lasley Linkedin profile">
+                <img src="assets/img/icons/linkedin-rect-512px.svg" alt="Stone Lasley Linkedin profile">
             </a>
             <a id="twitter" class="social white-text right" href="http://www.twitter.com/stonelasley">
-                <img src="../assets/img/icons/twitter-bird-512px.svg" alt="Stone Lasley Twitter">
+                <img src="assets/img/icons/twitter-bird-512px.svg" alt="Stone Lasley Twitter">
             </a>
-            <div class="id="nav-mobile" fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
-                <a class="btn-floating btn-large red">
-                    <i class="large mdi-navigation-menu"></i>
-                </a>
-                <ul>
-                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
-<script src="init.js"></script>
-<script src="app.js"></script>
-<script src="view1/view1.js"></script>
-<script src="view2/view2.js"></script>
-<script src="contact/contact.js"></script>
-<script src="components/version/version.js"></script>
-<script src="components/version/version-directive.js"></script>
-<script src="components/version/interpolate-filter.js"></script>
+<script src="app/init.js"></script>
+<script src="app/app.js"></script>
+<script src="app/view1/view1.js"></script>
+<script src="app/view2/view2.js"></script>
+<script src="app/components/contact/contact.js"></script>
+<script src="app/components/version/version.js"></script>
+<script src="app/components/version/version-directive.js"></script>
+<script src="app/components/version/interpolate-filter.js"></script>
 
 </body>
 </html>
