@@ -1,14 +1,7 @@
 'use strict';
 
 angular.module('contact', ['ui.router'])
-
-//.config(['$routeProvider', function($routeProvider) {
-//  $routeProvider.when('/contact', {
-//    templateUrl: '/contact.html',
-//    controller: 'ContactCtrl'
-//  });
-//}])
-
+  
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('contact', {
