@@ -1,3 +1,5 @@
+https://travis-ci.org/stonelasley/home.svg?branch=develop
+
 # Home-Website JS Edition
 
 For the few of you that have seen my home website change over the years you may have wondered what was going on.
