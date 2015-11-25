@@ -1,16 +1,13 @@
 'use strict';
 
-describe('stone.contact module', function() {
+describe('contact module', function () {
+  beforeEach(module('contact'));
 
-  beforeEach(module('stone.contact'));
-
-  describe('contact controller', function(){
-
-    it('should ....', inject(function($controller) {
-      //spec body
-      var contactCtrl = $controller('ContactCtrl');
-      expect(contactCtrl).toBeDefined();
+  describe('ContactCtrl', function () {
+    it('should be defined', inject(function ($controller) {
+      var $scope = {};
+      $controller('ContactCtrl', { $scope: $scope });
+      expect($controller).toBeDefined()
     }));
-
   });
 });

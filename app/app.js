@@ -2,7 +2,9 @@
 
 angular.module('stone', [
   'ui.router',
-  'contact'
+  'home',
+  'contact',
+  'about'
 ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');

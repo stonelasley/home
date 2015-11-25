@@ -5,37 +5,37 @@
 describe('my app', function() {
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+  it('should automatically redirect to / when location hash/fragment is empty', function() {
+    browser.get('/');
+    expect(browser.getLocationAbsUrl()).toMatch("/");
   });
 
 
-  describe('view1', function() {
+  describe('about', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('#/about');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
+    it('should render about page when user navigates to /about', function() {
+      expect(element.all(by.css('[ui-view] h1')).first().getText()).
+        toMatch(/ABOUT PAGE/);
     });
 
   });
 
 
-  describe('view2', function() {
+  describe('contact', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('#/contact');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
+    it('should render contact when user navigates to /contact', function() {
+      expect(element.all(by.css('[ui-view] h1')).first().getText()).
+        toMatch('Contact Me');
     });
 
   });
