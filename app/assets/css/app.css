@@ -110,11 +110,11 @@ textarea.materialize-textarea:focus:not([readonly]){
 /* valid color */
 
 /* invalid color */
-.input-field input[type=text].ng-invalid {
+.input-field input[type=text].ng-invalid.ng-touched {
   border-bottom: 1px solid #ff0000;
   box-shadow: 0 1px 0 0 #ff0000;
 }
-.input-field input[type=email].ng-invalid {
+.input-field input[type=email].ng-invalid.ng-touched {
   border-bottom: 1px solid #ff0000;
   box-shadow: 0 1px 0 0 #ff0000;
 }
