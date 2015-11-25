@@ -3,9 +3,9 @@
         <div class="panel">
             <span class="center-align white-text"><h1>Contact Me</h1></span>
             <div ng-controller="ContactCtrl">
-                <form novalidate class="simple-form">
+                <form novalidate name='contactForm' class="simple-form">
                     <div class="input-field">
-                        <input id="contact-name" type="text" ng-model="contact.name"/>
+                        <input id="contact-name" type="text" ng-model="contact.name" required/>
                         <label for="contact-name">Name</label>
                     </div>
                     <div class="input-field">
@@ -19,14 +19,14 @@
                     </div>
 
                     <div class="input-field">
-                        <textarea id="contact-message" class="materialize-textarea"  ng-model="contact.message"></textarea>
+                        <textarea id="contact-message" class="materialize-textarea"  ng-model="contact.message" required></textarea>
                         <label for="contact-message">Message</label>
                     </div>
                     <div class="right-align">
-                        <input class="btn btn-large white" type="submit" ng-click="update(contact)" value="Submit"/>
+                        <input class="btn btn-large white" type="submit" ng-click="update(contact)" ng-disabled="contactForm.$invalid" value="Submit"/>
                     </div>
                 </form>
-                <p>{{confirmMessage}}</p>
+                <p id="contact-confirm" ng-bind="confirmMessage"></p>
             </div>
         </div>
     </div>
