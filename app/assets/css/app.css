@@ -77,44 +77,27 @@ input:-webkit-autofill {
     font-size: 1rem;
 }
 /* label focus color */
-.input-field input[type=text]:focus + label {
-  color: #ffffff;
-}
-.input-field input[type=email]:focus + label {
-    color: #ffffff;
-}
-.input-field input[type=tel]:focus + label {
-    color: #ffffff;
-}
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=tel]:focus + label,
 textarea.materialize-textarea:focus:not([readonly]) + label{
     color: #ffffff;
 }
 /*
 /* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #e8ca79;
-  box-shadow: 0 1px 0 0 #e8ca79;
-}
-.input-field input[type=email]:focus {
-  border-bottom: 1px solid #e8ca79;
-  box-shadow: 0 1px 0 0 #e8ca79;
-}
-.input-field input[type=tel]:focus {
-    border-bottom: 1px solid #e8ca79;
-    box-shadow: 0 1px 0 0 #e8ca79;
-}
-textarea.materialize-textarea:focus:not([readonly]){
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=tel]:focus,
+textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #e8ca79;
   box-shadow: 0 1px 0 0 #e8ca79;
 }
 /* valid color */
 
 /* invalid color */
-.input-field input[type=text].ng-invalid.ng-touched {
-  border-bottom: 1px solid #ff0000;
-  box-shadow: 0 1px 0 0 #ff0000;
-}
-.input-field input[type=email].ng-invalid.ng-touched {
-  border-bottom: 1px solid #ff0000;
-  box-shadow: 0 1px 0 0 #ff0000;
+.input-field input[type=text].ng-invalid.ng-touched,
+.input-field input[type=email].ng-invalid.ng-touched,
+textarea.materialize-textarea.ng-invalid.ng-touched {
+    border-bottom: 1px solid #ff0000;
+    box-shadow: 0 1px 0 0 #ff0000;
 }
