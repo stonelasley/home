@@ -70,7 +70,6 @@ describe('my app', function() {
 
       expect(hasClass(email, 'ng-invalid')).toBe(true);
       expect(submit.isEnabled()).toBe(false);
-      browser.pause();
     });
 
   });
