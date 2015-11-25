@@ -1,4 +1,4 @@
-https://travis-ci.org/stonelasley/home.svg?branch=develop
+[![Build Status](https://travis-ci.org/stonelasley/home.svg?branch=develop)](https://travis-ci.org/stonelasley/home)
 
 # Home-Website JS Edition
 
